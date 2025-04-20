@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: cert-erpnext
+spec:
+  secretName: erpnext-tls
+  issuerRef:
+    name: letsencrypt-prod
+  commonName: erpnext.ezy.dev
+  dnsNames:
+  - erpnext.ezy.dev
+  - www.erpnext.ezy.dev
