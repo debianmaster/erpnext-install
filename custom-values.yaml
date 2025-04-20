@@ -1,0 +1,8 @@
+jobs:
+  createSite:
+    enabled: true
+    siteName: "erpnext.ezy.dev"
+    adminPassword: "secret"
+persistence:
+  worker:
+    storageClass: nfs
